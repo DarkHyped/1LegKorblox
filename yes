@@ -199,7 +199,7 @@ notifications.ResetOnSpawn = false
 notifsHolderFrame.Name = "notifsHolderFrame"
 notifsHolderFrame.Parent = notifications
 notifsHolderFrame.AnchorPoint = Vector2.new(1, 1)
-notifsHolderFrame.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
+notifsHolderFrame.Color3 = Color3.fromRGB(28, 56, 139)
 notifsHolderFrame.BackgroundTransparency = 1
 notifsHolderFrame.BorderSizePixel = 0
 notifsHolderFrame.ClipsDescendants = true
@@ -215,7 +215,7 @@ notifHolderListLayout.Padding = UDim.new(0, 4)
 
 errorTemplate.Name = "error"
 errorTemplate.AnchorPoint = Vector2.new(1, 1)
-errorTemplate.BackgroundColor3 = Color3.fromRGB(255, 207, 203)
+errorTemplate.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 errorTemplate.BorderSizePixel = 0
 errorTemplate.BackgroundTransparency = 1
 errorTemplate.Position = UDim2.new(1, 0, 1, -100)
@@ -223,7 +223,7 @@ errorTemplate.Size = UDim2.new(1, 0, 0, 40)
 
 errorTemplateFrame.Name = "templateFrame"
 errorTemplateFrame.Parent = errorTemplate
-errorTemplateFrame.BackgroundColor3 = Color3.fromRGB(255, 207, 203)
+errorTemplateFrame.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 errorTemplateFrame.BorderSizePixel = 0
 errorTemplateFrame.Size = UDim2.new(1, 0, 1, 0)
 
@@ -232,7 +232,7 @@ errorTemplateCorner.Parent = errorTemplateFrame
 
 errorSeverityFrame.Name = "severityFrame"
 errorSeverityFrame.Parent = errorTemplateFrame
-errorSeverityFrame.BackgroundColor3 = Color3.fromRGB(236, 88, 76)
+errorSeverityFrame.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 errorSeverityFrame.Size = UDim2.new(0, 10, 1, 0)
 
 errorSeverityCorner.Name = "severityCorner"
@@ -240,7 +240,7 @@ errorSeverityCorner.Parent = errorSeverityFrame
 
 hideErrorSeverityCornerFrame.Name = "hideSeverityCornerFrame"
 hideErrorSeverityCornerFrame.Parent = errorSeverityFrame
-hideErrorSeverityCornerFrame.BackgroundColor3 = Color3.fromRGB(255, 207, 203)
+hideErrorSeverityCornerFrame.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 hideErrorSeverityCornerFrame.BorderSizePixel = 0
 hideErrorSeverityCornerFrame.Position = UDim2.new(0.5, 0, 0, 0)
 hideErrorSeverityCornerFrame.Size = UDim2.new(0.5, 0, 1, 0)
@@ -248,7 +248,7 @@ hideErrorSeverityCornerFrame.Size = UDim2.new(0.5, 0, 1, 0)
 errorImage.Name = "image"
 errorImage.Parent = errorTemplateFrame
 errorImage.AnchorPoint = Vector2.new(0, 0.5)
-errorImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+errorImage.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 errorImage.BackgroundTransparency = 1
 errorImage.BorderSizePixel = 0
 errorImage.Position = UDim2.new(0, 15, 0.5, 0)
@@ -258,7 +258,7 @@ errorImage.ImageColor3 = Color3.fromRGB(236, 88, 76)
 
 errorInformationFrame.Name = "informationFrame"
 errorInformationFrame.Parent = errorTemplateFrame
-errorInformationFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+errorInformationFrame.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 errorInformationFrame.BackgroundTransparency = 1
 errorInformationFrame.BorderSizePixel = 0
 errorInformationFrame.Position = UDim2.new(0, 45, 0, 0)
@@ -266,7 +266,7 @@ errorInformationFrame.Size = UDim2.new(1, -45 - 25, 1, 0)
 
 errorHeadingText.Name = "headingText"
 errorHeadingText.Parent = errorInformationFrame
-errorHeadingText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+errorHeadingText.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 errorHeadingText.BackgroundTransparency = 1
 errorHeadingText.BorderSizePixel = 0
 errorHeadingText.ClipsDescendants = true
@@ -280,7 +280,7 @@ errorHeadingText.TextYAlignment = Enum.TextYAlignment.Bottom
 
 errorBodyText.Name = "bodyText"
 errorBodyText.Parent = errorInformationFrame
-errorBodyText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+errorBodyText.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 errorBodyText.BackgroundTransparency = 1
 errorBodyText.BorderSizePixel = 0
 errorBodyText.ClipsDescendants = true
@@ -297,7 +297,7 @@ errorBodyText.TextYAlignment = Enum.TextYAlignment.Top
 errorCornerHidingFrame.Name = "cornerHidingFrame"
 errorCornerHidingFrame.Parent = errorTemplateFrame
 errorCornerHidingFrame.AnchorPoint = Vector2.new(1, 0)
-errorCornerHidingFrame.BackgroundColor3 = Color3.fromRGB(255, 207, 203)
+errorCornerHidingFrame.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 errorCornerHidingFrame.BorderSizePixel = 0
 errorCornerHidingFrame.Position = UDim2.new(1, 0, 0, 0)
 errorCornerHidingFrame.Size = UDim2.new(.1, 0, 1, 0)
@@ -306,7 +306,7 @@ errorCornerHidingFrame.ZIndex = 0
 errorCloseButton.Name = "closeButton"
 errorCloseButton.Parent = errorTemplateFrame
 errorCloseButton.AnchorPoint = Vector2.new(1, 0.5)
-errorCloseButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+errorCloseButton.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 errorCloseButton.BackgroundTransparency = 1
 errorCloseButton.BorderSizePixel = 0
 errorCloseButton.Position = UDim2.new(1, -5, 0.5, 0)
@@ -316,7 +316,7 @@ errorCloseButton.ImageColor3 = Color3.fromRGB(236, 88, 76)
 
 infoTemplate.Name = "info"
 infoTemplate.AnchorPoint = Vector2.new(1, 1)
-infoTemplate.BackgroundColor3 = Color3.fromRGB(204, 226, 254)
+infoTemplate.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 infoTemplate.BorderSizePixel = 0
 infoTemplate.BackgroundTransparency = 1
 infoTemplate.Position = UDim2.new(1, 0, 1, -100)
@@ -324,13 +324,13 @@ infoTemplate.Size = UDim2.new(1, 0, 0, 40)
 
 infoTemplateFrame.Name = "templateFrame"
 infoTemplateFrame.Parent = infoTemplate
-infoTemplateFrame.BackgroundColor3 = Color3.fromRGB(204, 226, 254)
+infoTemplateFrame.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 infoTemplateFrame.BorderSizePixel = 0
 infoTemplateFrame.Size = UDim2.new(1, 0, 1, 0)
 
 infoSeverityFrame.Name = "severityFrame"
 infoSeverityFrame.Parent = infoTemplateFrame
-infoSeverityFrame.BackgroundColor3 = Color3.fromRGB(50, 131, 226)
+infoSeverityFrame.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 infoSeverityFrame.Size = UDim2.new(0, 10, 1, 0)
 
 infoSeverityCorner.Name = "severityCorner"
@@ -338,7 +338,7 @@ infoSeverityCorner.Parent = infoSeverityFrame
 
 hideInfoSeverityCornerFrame.Name = "hideSeverityCornerFrame"
 hideInfoSeverityCornerFrame.Parent = infoSeverityFrame
-hideInfoSeverityCornerFrame.BackgroundColor3 = Color3.fromRGB(204, 226, 254)
+hideInfoSeverityCornerFrame.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 hideInfoSeverityCornerFrame.BorderSizePixel = 0
 hideInfoSeverityCornerFrame.Position = UDim2.new(0.5, 0, 0, 0)
 hideInfoSeverityCornerFrame.Size = UDim2.new(0.5, 0, 1, 0)
@@ -346,7 +346,7 @@ hideInfoSeverityCornerFrame.Size = UDim2.new(0.5, 0, 1, 0)
 infoImage.Name = "image"
 infoImage.Parent = infoTemplateFrame
 infoImage.AnchorPoint = Vector2.new(0, 0.5)
-infoImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+infoImage.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 infoImage.BackgroundTransparency = 1
 infoImage.BorderSizePixel = 0
 infoImage.Position = UDim2.new(0, 15, 0.5, 0)
@@ -356,7 +356,7 @@ infoImage.ImageColor3 = Color3.fromRGB(50, 131, 226)
 
 infoInformationFrame.Name = "informationFrame"
 infoInformationFrame.Parent = infoTemplateFrame
-infoInformationFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+infoInformationFrame.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 infoInformationFrame.BackgroundTransparency = 1
 infoInformationFrame.BorderSizePixel = 0
 infoInformationFrame.Position = UDim2.new(0, 45, 0, 0)
@@ -364,7 +364,7 @@ infoInformationFrame.Size = UDim2.new(1, -45 - 25, 1, 0)
 
 infoHeadingText.Name = "headingText"
 infoHeadingText.Parent = infoInformationFrame
-infoHeadingText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+infoHeadingText.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 infoHeadingText.BackgroundTransparency = 1
 infoHeadingText.BorderSizePixel = 0
 infoHeadingText.ClipsDescendants = true
@@ -378,7 +378,7 @@ infoHeadingText.TextYAlignment = Enum.TextYAlignment.Bottom
 
 infoBodyText.Name = "bodyText"
 infoBodyText.Parent = infoInformationFrame
-infoBodyText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+infoBodyText.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 infoBodyText.BackgroundTransparency = 1
 infoBodyText.BorderSizePixel = 0
 infoBodyText.ClipsDescendants = true
@@ -396,7 +396,7 @@ infoBodyText.TextYAlignment = Enum.TextYAlignment.Top
 infoCornerHidingFrame.Name = "cornerHidingFrame"
 infoCornerHidingFrame.Parent = infoTemplateFrame
 infoCornerHidingFrame.AnchorPoint = Vector2.new(1, 0)
-infoCornerHidingFrame.BackgroundColor3 = Color3.fromRGB(204, 226, 254)
+infoCornerHidingFrame.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 infoCornerHidingFrame.BorderSizePixel = 0
 infoCornerHidingFrame.Position = UDim2.new(1, 0, 0, 0)
 infoCornerHidingFrame.Size = UDim2.new(.1, 0, 1, 0)
@@ -405,7 +405,7 @@ infoCornerHidingFrame.ZIndex = 0
 infoCloseButton.Name = "closeButton"
 infoCloseButton.Parent = infoTemplateFrame
 infoCloseButton.AnchorPoint = Vector2.new(1, 0.5)
-infoCloseButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+infoCloseButton.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 infoCloseButton.BackgroundTransparency = 1
 infoCloseButton.BorderSizePixel = 0
 infoCloseButton.Position = UDim2.new(1, -5, 0.5, 0)
@@ -418,7 +418,7 @@ infoTemplateCorner.Parent = infoTemplateFrame
 
 messageTemplate.Name = "message"
 messageTemplate.AnchorPoint = Vector2.new(1, 1)
-messageTemplate.BackgroundColor3 = Color3.fromRGB(233, 233, 235)
+messageTemplate.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 messageTemplate.BorderSizePixel = 0
 messageTemplate.BackgroundTransparency = 1
 messageTemplate.Position = UDim2.new(1, 0, 1, -100)
@@ -426,7 +426,7 @@ messageTemplate.Size = UDim2.new(1, 0, 0, 40)
 
 messageTemplateFrame.Name = "templateFrame"
 messageTemplateFrame.Parent = messageTemplate
-messageTemplateFrame.BackgroundColor3 = Color3.fromRGB(233, 233, 235)
+messageTemplateFrame.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 messageTemplateFrame.BorderSizePixel = 0
 messageTemplateFrame.Size = UDim2.new(1, 0, 1, 0)
 
@@ -435,7 +435,7 @@ messageTemplateCorner.Parent = messageTemplateFrame
 
 messageSeverityFrame.Name = "severityFrame"
 messageSeverityFrame.Parent = messageTemplateFrame
-messageSeverityFrame.BackgroundColor3 = Color3.fromRGB(112, 118, 130)
+messageSeverityFrame.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 messageSeverityFrame.Size = UDim2.new(0, 10, 1, 0)
 
 messageSeverityCorner.Name = "severityCorner"
@@ -443,14 +443,14 @@ messageSeverityCorner.Parent = messageSeverityFrame
 
 hideMessageSeverityCornerFrame.Name = "hideSeverityCornerFrame"
 hideMessageSeverityCornerFrame.Parent = messageSeverityFrame
-hideMessageSeverityCornerFrame.BackgroundColor3 = Color3.fromRGB(233, 233, 235)
+hideMessageSeverityCornerFrame.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 hideMessageSeverityCornerFrame.BorderSizePixel = 0
 hideMessageSeverityCornerFrame.Position = UDim2.new(0.5, 0, 0, 0)
 hideMessageSeverityCornerFrame.Size = UDim2.new(0.5, 0, 1, 0)
 
 messageInformationFrame.Name = "informationFrame"
 messageInformationFrame.Parent = messageTemplateFrame
-messageInformationFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+messageInformationFrame.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 messageInformationFrame.BackgroundTransparency = 1
 messageInformationFrame.BorderSizePixel = 0
 messageInformationFrame.Position = UDim2.new(0, 15, 0, 0)
@@ -458,7 +458,7 @@ messageInformationFrame.Size = UDim2.new(1, -40, 1, 0)
 
 messageHeadingText.Name = "headingText"
 messageHeadingText.Parent = messageInformationFrame
-messageHeadingText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+messageHeadingText.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 messageHeadingText.BackgroundTransparency = 1
 messageHeadingText.BorderSizePixel = 0
 messageHeadingText.ClipsDescendants = true
@@ -472,7 +472,7 @@ messageHeadingText.TextYAlignment = Enum.TextYAlignment.Bottom
 
 messageBodyText.Name = "bodyText"
 messageBodyText.Parent = messageInformationFrame
-messageBodyText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+messageBodyText.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 messageBodyText.BackgroundTransparency = 1
 messageBodyText.BorderSizePixel = 0
 messageBodyText.ClipsDescendants = true
@@ -489,7 +489,7 @@ messageBodyText.TextYAlignment = Enum.TextYAlignment.Top
 messageCornerHidingFrame.Name = "cornerHidingFrame"
 messageCornerHidingFrame.Parent = messageTemplateFrame
 messageCornerHidingFrame.AnchorPoint = Vector2.new(1, 0)
-messageCornerHidingFrame.BackgroundColor3 = Color3.fromRGB(233, 233, 235)
+messageCornerHidingFrame.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 messageCornerHidingFrame.BorderSizePixel = 0
 messageCornerHidingFrame.Position = UDim2.new(1, 0, 0, 0)
 messageCornerHidingFrame.Size = UDim2.new(.1, 0, 1, 0)
@@ -498,7 +498,7 @@ messageCornerHidingFrame.ZIndex = 0
 messageCloseButton.Name = "closeButton"
 messageCloseButton.Parent = messageTemplateFrame
 messageCloseButton.AnchorPoint = Vector2.new(1, 0.5)
-messageCloseButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+messageCloseButton.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 messageCloseButton.BackgroundTransparency = 1
 messageCloseButton.BorderSizePixel = 0
 messageCloseButton.Position = UDim2.new(1, -5, 0.5, 0)
@@ -508,7 +508,7 @@ messageCloseButton.ImageColor3 = Color3.fromRGB(112, 118, 130)
 
 successTemplate.Name = "success"
 successTemplate.AnchorPoint = Vector2.new(1, 1)
-successTemplate.BackgroundColor3 = Color3.fromRGB(196, 247, 221)
+successTemplate.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 successTemplate.BorderSizePixel = 0
 successTemplate.BackgroundTransparency = 1
 successTemplate.Position = UDim2.new(1, 0, 1, -100)
@@ -516,7 +516,7 @@ successTemplate.Size = UDim2.new(1, 0, 0, 40)
 
 successTemplateFrame.Name = "templateFrame"
 successTemplateFrame.Parent = successTemplate
-successTemplateFrame.BackgroundColor3 = Color3.fromRGB(196, 247, 221)
+successTemplateFrame.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 successTemplateFrame.BorderSizePixel = 0
 successTemplateFrame.Size = UDim2.new(1, 0, 1, 0)
 
@@ -525,7 +525,7 @@ successTemplateCorner.Parent = successTemplateFrame
 
 successSeverityFrame.Name = "severityFrame"
 successSeverityFrame.Parent = successTemplateFrame
-successSeverityFrame.BackgroundColor3 = Color3.fromRGB(50, 195, 125)
+successSeverityFrame.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 successSeverityFrame.Size = UDim2.new(0, 10, 1, 0)
 
 successSeverityCorner.Name = "severityCorner"
@@ -533,7 +533,7 @@ successSeverityCorner.Parent = successSeverityFrame
 
 hideSuccessSeverityCornerFrame.Name = "hideSeverityCornerFrame"
 hideSuccessSeverityCornerFrame.Parent = successSeverityFrame
-hideSuccessSeverityCornerFrame.BackgroundColor3 = Color3.fromRGB(196, 247, 221)
+hideSuccessSeverityCornerFrame.BackgroundColor3 = Color3.fromRGB(28, 56, 139)
 hideSuccessSeverityCornerFrame.BorderSizePixel = 0
 hideSuccessSeverityCornerFrame.Position = UDim2.new(0.5, 0, 0, 0)
 hideSuccessSeverityCornerFrame.Size = UDim2.new(0.5, 0, 1, 0)
