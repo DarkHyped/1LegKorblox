@@ -1,0 +1,124 @@
+-- Credits to who ever made this. Edited by tresk#1337 and Moon!#4444
+local Bypasses = {
+    ["ass"] = "as{{aieixzvzx:s}}",
+    ["asshole"] = "as{{aieixzvzx:shole}}",
+    ["bitch"] = "bit{{aieixzvzx:ch}}",
+    ["bitches"] = "bit{{aieixzvzx:ches}}",
+    ["cock"] = "co{{aieixzvzx:ck}}",
+    ["cunt"] = "cu{{aieixzvzx:nt}}",
+    ["dick"] = "di{{zczxczvz:ck}}",
+    ["dyke"] = "dy{{aieixzvzx:ke}}",
+    ["faggot"] = "fa{{aieixzvzx:ggot}}",
+    ["faggots"] = "fa{{aieixzvzx:ggots}}",
+    ["jerking"] = "jer{{aieixzvzx:king}}",
+    ["fuck"] = "fu{{aieixzvzx:ck}}",
+    ["fucked"] = "fu{{aieixzvzx:cked}}",
+    ["fuckers"] = "fu{{aieixzvzx:ckers}}",
+    ["gaylord"] = "gayl{{aieixzvzx:ord}}",
+    ["kike"] = "ki{{aieixzvzx:ke}}",
+    ["motherfucker"] = "motherf{{aieixzvzx:ucker}}",
+    ["nigga"] = "ni{{aieixzvzx:gga}}",
+    ["niggas"] = "ni{{aieixzvzx:ggas}}",
+    ["nigger"] = "ni{{aieixzvzx:gger}}",
+    ["niggers"] = "ni{{aieixzvzx:ggers}}",
+    ["piss"] = "p{{aieixzvzx:iss}}",
+    ["pissbaby"] = "p{{aieixzvzx:issbaby}}",
+    ["stfu"] = "st{{aieixzvzx:fu}}",
+    ["balls"] = "ba{{aieixzvzx:lls}}",
+    ["penis"] = "pe{{aieixzvzx:nis}}",
+    ["pussy"] = "pu{{aieixzvzx:ssy}}",
+    ["shit"] = "sh{{aieixzvzx:it}}",
+    ["shitty"] = "sh{{aieixzvzx:itty}}",
+    ["slut"] = "sl{{aieixzvzx:ut}}",
+    ["whore"] = "who{{aieixzvzx:re}}",
+    ["discord"] = "disco{{aieixzvzx:rd}}",
+    ["kys"] = "k{{aieixzvzx:ys}}",
+    ["kill"] = "ki{{aieixzvzx:ll}}",
+    ["retarded"] = "reta{{aieixzvzx:rded}}",
+    ["horny"] = "horn{{aieixzvzx:y}}",
+    ["cotton"] = "cot{{aieixzvzx:ton}}",
+    ["blowjob"] = "blow{{aieixzvzx:job}}",
+    ["sex"] = "se{{aieixzvzx:x}}",
+    ["lover"] = "lo{{aieixzvzx:ver}}",
+    ["hitler"] = "hit{{aieixzvzx:ler}}",
+    ["george floyd"] = "geo{{aieixzvzx:rge}} flo{{aieixzvzx:yd}}",
+    ["love"] = "lo{{aieixzvzx:ve}}",
+    ["vagina"] = "vag{{aieixzvzx:ina}}",
+    ["cums"] = "c{{aieixzvzx:ums}}",
+    ["pornhub"] = "po{{aieixzvzx:rnhub}}",
+    ["sexy"] = "se{{aieixzvzx:xy}}",
+    ["slave"] = "sl{{aieixzvzx:ave}}",
+    ["bastard"] = "ba{{aieixzvzx:stard}}",
+    ["raped"] = "ra{{aieixzvzx:ped}}",
+    ["rape"] = "ra{{aieixzvzx:pe}}",
+    ["terrorist"] = "terror{{aieixzvzx:ist}}",
+    ["orgy"] = "or{{aieixzvzx:gy}}",
+    ["orgasm"] = "org{{aieixzvzx:asm}}",
+    ["meth"] = "me{{aieixzvzx:th}}",
+    ["weed"] = "we{{aieixzvzx:ed}}",
+    ["dating"] = "da{{aieixzvzx:ting}}", 
+    ["boobs"] = "boo{{aieixzvzx:bs}}",
+    ["boob"] = "boo{{aieixzvzx:bs}}",
+    ["tits"] = "t{{aieixzvzx:its}}",
+    ["tit"] = "t{{aieixzvzx:its}}",
+    ["condom"] = "con{{aieixzvzx:dom}}",
+    ["condoms"] = "con{{aieixzvzx:doms}}",
+    ["pedo"] = "pe{{aieixzvzx:do}}",
+    ["hitler"] = "hit{{aieixzvzx:ler}}",
+    ["fucker"] = "fu{{aieixzvzx:cker}}",
+    ["cum"] = "c{{aieixzvzx:um}}",
+    ["cummed"] = "c{{aieixzvzx:ummed}}",
+    ["twitter"] = "twi{{aieixzvzx:tter}}",
+    ["youtube"] = "you{{aieixzvzx:tube}}",
+    ["rumble"] = "rum{{aieixzvzx:ble}}",
+    ["tiktok"] = "tik{{aieixzvzx:tok}}",
+    ["facebook"] = "face{{aieixzvzx:book}}",
+    ["whatsapp"] = "wha{{aieixzvzx:tsapp}}",
+    ["discord"] = "disco{{aieixzvzx:rd}}",
+    ["instagram"] = "inst{{aieixzvzx:agram}}",
+    ["snap"] = "s{{aieixzvzx:nap}}",
+    ["wtf"] = "wt{{aieixzvzx:f}}",
+    ["gtfo"] = "gt{{aieixzvzx:fo}}",
+    ["kys"] = "k{{aieixzvzx:ys}}",
+    ["omfg"] = "omf{{aieixzvzx:g}}",
+    ["stfu"] = "st{{aieixzvzx:fu}}",
+    ["ily"] = "il{{aieixzvzx:y}}",
+    ["istg"] = "is{{aieixzvzx:tg}}",
+    ["erection"] = "erec{{aieixzvzx:tion}}",
+    ["lmao"] = "lm{{aieixzvzx:ao}}",
+}
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Remote = ReplicatedStorage:FindFirstChild("SayMessageRequest", true)
+
+local ChatBypass; ChatBypass = hookmetamethod(Remote, "__namecall", function(self, ...)
+    local Method = getnamecallmethod()
+    local Arguments = {...}
+    
+    if self == Remote and Method == "FireServer" then
+        local Message = Arguments[1]
+        local Split = Message:split(" ")
+        local FinalMessage = ""
+
+        for _, x in next, Split do
+            for _, Bypass in next, Bypasses do
+                if x:lower() == _ then
+                    if x:upper() ~= x then
+                        Message = Message:gsub(x, Bypass)
+                        FinalMessage = Message .. " fn"
+                    else
+                        Message = Message:gsub(x, Bypass):upper()
+                        FinalMessage = Message:gsub(x, Bypass):upper() .. " fn"
+                    end
+                end
+            end
+        end
+        
+        if FinalMessage ~= "" then
+            Arguments[1] = FinalMessage
+        end
+        
+        return ChatBypass(self, unpack(Arguments))
+    end
+    
+    return ChatBypass(self, ...)
+end)
